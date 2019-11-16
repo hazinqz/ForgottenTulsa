@@ -27,7 +27,13 @@ class ViewController: UIViewController {
         
         centerMapOnLocation(location: initialLocation)
     }
-
-
+    
+// Switch the map type.
+    
+    @IBAction func mapTypeChanged(_ sender: UISegmentedControl) {
+        
+        mapView.mapType = MKMapType.init(rawValue: UInt(sender.selectedSegmentIndex)) ?? .standard
+    }
+    
 }
 

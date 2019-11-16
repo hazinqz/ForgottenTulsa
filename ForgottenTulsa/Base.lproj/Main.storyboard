@@ -28,6 +28,9 @@
                                                 <segment title="Satellite"/>
                                                 <segment title="Hybrid"/>
                                             </segments>
+                                            <connections>
+                                                <action selector="mapTypeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ugt-ES-Dyw"/>
+                                            </connections>
                                         </segmentedControl>
                                         <barButtonItem key="rightBarButtonItem" systemItem="organize" id="wf3-6i-l5r" userLabel="Organize"/>
                                     </navigationItem>
