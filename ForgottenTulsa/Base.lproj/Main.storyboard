@@ -30,6 +30,7 @@
                                                 <segment title="Hybrid"/>
                                             </segments>
                                         </segmentedControl>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="wf3-6i-l5r" userLabel="Organize"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
