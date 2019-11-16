@@ -15,9 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="77q-dM-9g4">
-                                <rect key="frame" x="0.0" y="54" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77q-dM-9g4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
                                     <navigationItem id="kQW-CG-fPU" userLabel="Navigation Item">
                                         <nil key="title"/>
@@ -36,6 +35,11 @@
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="77q-dM-9g4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1oA-Yt-mFt"/>
+                            <constraint firstItem="77q-dM-9g4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="C4i-ov-bsa"/>
+                            <constraint firstItem="77q-dM-9g4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IAo-pK-WrG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
