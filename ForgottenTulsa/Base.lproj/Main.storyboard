@@ -50,6 +50,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="Mpu-AV-MfU" userLabel="Navigation Item"/>
+                    <connections>
+                        <outlet property="mapView" destination="cnC-Ei-OuW" id="Qu3-nm-2qz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
