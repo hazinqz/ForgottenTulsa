@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,7 +32,11 @@
                                                 <action selector="mapTypeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ugt-ES-Dyw"/>
                                             </connections>
                                         </segmentedControl>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="wf3-6i-l5r" userLabel="Organize"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="wf3-6i-l5r" userLabel="Organize">
+                                            <connections>
+                                                <segue destination="RPF-pe-BfY" kind="presentation" id="Aca-ns-vVd"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -60,6 +64,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Hidden Gems-->
+        <scene sceneID="Mx0-pF-YTe">
+            <objects>
+                <viewController title="Hidden Gems" id="RPF-pe-BfY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3kd-94-fme">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eUO-Go-wA9">
+                                <rect key="frame" x="0.0" y="24" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="EfB-5Z-5zW">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="wxA-iX-x6C">
+                                            <connections>
+                                                <action selector="closeOptions:" destination="ZVl-6f-jXk" id="XpX-wV-cvf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ck5-3s-9Ix"/>
+                    </view>
+                    <connections>
+                        <outlet property="view" destination="3kd-94-fme" id="bZZ-AM-IxV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QuW-u5-iXd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ZVl-6f-jXk" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="897" y="138"/>
         </scene>
     </scenes>
 </document>
