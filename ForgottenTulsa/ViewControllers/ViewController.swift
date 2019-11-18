@@ -37,6 +37,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       (segue.destination as? ViewController)?.selectedOptions = selectedOptions
     }
+    // Done button on HiddenGems ViewController
     
     @IBAction func closeOptions(_ exitSegue: UIStoryboardSegue) {
       guard let vc = exitSegue.source as? ViewController else { return }
