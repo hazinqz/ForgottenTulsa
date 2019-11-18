@@ -12,9 +12,11 @@ import MapKit
 class ViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     
+      var selectedOptions : [HiddenGemsType] = []
+    
     override func viewDidLoad() {
-
         super.viewDidLoad()
+        
       // Set initial location to Tulsa
         let initialLocation = CLLocation(latitude: 36.153980, longitude: -95.992775)
 
@@ -28,7 +30,20 @@ class ViewController: UIViewController {
         centerMapOnLocation(location: initialLocation)
     }
     
-// Switch the map type.
+    func loadSelectedOptions() {
+
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      (segue.destination as? ViewController)?.selectedOptions = selectedOptions
+    }
+    
+    @IBAction func closeOptions(_ exitSegue: UIStoryboardSegue) {
+      guard let vc = exitSegue.source as? ViewController else { return }
+      selectedOptions = vc.selectedOptions
+      loadSelectedOptions()
+    }
+    // Switch the map type.
     
     @IBAction func mapTypeChanged(_ sender: UISegmentedControl) {
         

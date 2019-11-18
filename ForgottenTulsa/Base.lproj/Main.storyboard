@@ -80,7 +80,8 @@
                                     <navigationItem title="Title" id="EfB-5Z-5zW">
                                         <barButtonItem key="leftBarButtonItem" systemItem="done" id="wxA-iX-x6C">
                                             <connections>
-                                                <action selector="closeOptions:" destination="ZVl-6f-jXk" id="XpX-wV-cvf"/>
+                                                <action selector="backToMap:" destination="ZVl-6f-jXk" id="8OO-bg-KzO"/>
+                                                <segue destination="ZVl-6f-jXk" kind="unwind" unwindAction="closeOptions:" id="pvL-Ku-GIm"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>

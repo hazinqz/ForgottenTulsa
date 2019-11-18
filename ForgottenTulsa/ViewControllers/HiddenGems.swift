@@ -6,4 +6,12 @@
 //  Copyright © 2019 Jeffery Mason. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+enum HiddenGemsType: Int {
+  case mapBoundary = 0
+  case mapOverlay
+  case mapPins
+  case mapCharacterLocation
+  case mapRoute
+}
